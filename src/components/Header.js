@@ -10,8 +10,8 @@ export default function Header (){
                 <img src={logo} alt="logo du site Kasa" />
             </Link>
             <nav>
-                <Link>Acceuil</Link>
-                <Link>A propos</Link>
+                <Link to="/" >Acceuil</Link>
+                <Link to="/about" >A propos</Link>
             </nav>
         </header>
     )
