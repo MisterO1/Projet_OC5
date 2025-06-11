@@ -1,9 +1,13 @@
-body {
-    font-family: 'Montserrat', Courier, monospace;
+html, body, #root {
+    width: 100%;
+    max-width: 100%;
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', Courier, monospace;
     border: 1px solid red;
-    width: 100vw;
 }
 *{
     box-sizing: border-box;
@@ -11,16 +15,10 @@ body {
 
 #root {
     border: 1px solid blue;
-    padding: 0;
-    width: 100%;
     margin-top: 10px;
     font-size: 24px;
-
-    @media screen and (max-width: 768px) {
-        font-size: 12px;
-    }
 }
 
 .comp {
-    border: 1px dashed green;
+    border: 1px solid green;
 }
