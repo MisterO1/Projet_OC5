@@ -1,4 +1,4 @@
-import '../styles/sass/Preview.scss'
+import '../styles/Preview.scss'
 
 export default function Preview({ image, isText }) {
     return (

@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png"
 import logoSmall from "../assets/logo_small.png"
 import { Link } from "react-router-dom"
-import "../styles/sass/Header.scss"
+import "../styles/Header.scss"
 
 
 export default function Header (){
