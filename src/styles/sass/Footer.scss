@@ -10,5 +10,11 @@ footer {
 
     @media screen and (max-width: 768px){
         padding-Top: 20px;
+        padding-bottom: 20px;
+        p {
+            text-align: center;
+            font-size: 12px;
+            max-width: 30%;
+        }
     }
 }
