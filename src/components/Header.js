@@ -6,7 +6,7 @@ import "../styles/sass/Header.scss"
 
 export default function Header (){
     return (
-        <header>
+        <header className="comp">
             <Link to="/">
                 <picture>
                     <source media="(max-width: 768px)" srcSet={logoSmall} />

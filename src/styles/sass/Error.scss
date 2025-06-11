@@ -7,15 +7,36 @@ main {
     height: 600px;
 
     color: #FF6060;
-    border: 1px dashed green;
 
     .ErrorStatus {
         font-size: 200px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 36px;
+        text-align: center;
     }
 
     a {
         color: #000;
         text-decoration: underline solid #000;
         font-size: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 500px;
+        
+        .ErrorStatus {
+            font-size: 90px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 14px;
+        }
     }
 }

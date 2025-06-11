@@ -3,7 +3,7 @@ import "../styles/sass/Error.scss"
 
 export default function Error (){
     return(
-        <main>
+        <main className="comp">
             <span className="ErrorStatus">404</span>
             <p>Oups, la page que vous demandez n'existe pas</p>
             <Link>Retourner sur la page d'acceuil</Link>
