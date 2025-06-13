@@ -15,7 +15,7 @@ export default function HousingSheet(){
                 <source media='(max-width:768px)' srcSet={backgroundSmall} />
                 <img className='active' src={ background } alt='housing' />
             </picture>
-            <div className='presentation'>
+            <section className='presentation'>
                 <div className='infos infos-housing'>
                     <div className='title-location'>
                         <h1 className='title'>Cozy loft on the Canal Saint-Martin</h1>
@@ -54,7 +54,7 @@ export default function HousingSheet(){
                         
                 </div>
                 <div></div>
-            </div>
+            </section>
         </div>
     )
 }
