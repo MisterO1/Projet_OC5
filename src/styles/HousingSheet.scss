@@ -9,21 +9,33 @@
         padding: 0;
         margin: 0;
     }
-    .housing-pictures {
-        position: relative;
-        height: 415px;
-        overflow: hidden;
-        img {
-            display: none;
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
+
+    @media screen and (max-width:768px) {
+        .housing-pictures {
+            height: 255px;
         }
-        img.active {
-            display: block;
+        .arrow {
+            width: 12px;
+            height: 20px;
         }
     }
+}
+
+.housing-pictures {
+    position: relative;
+    height: 415px;
+    overflow: hidden;
+    img {
+        display: none;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    img.active {
+        display: block;
+    }
+
     .arrow {
         position: absolute;
         top: 50%;
@@ -41,14 +53,12 @@
         right: $arrow;
     }
 
-    @media screen and (max-width:768px) {
-        .housing-pictures {
-            height: 255px;
-        }
-        .arrow {
-            width: 12px;
-            height: 20px;
-        }
+    .pages {
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
     }
 }
 
