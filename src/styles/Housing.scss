@@ -1,51 +1,49 @@
 .comp-housing {
+    width: 100%;
+}
+.housing-container {
     $gap: 50px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    gap: $gap;
+    background-color: #F6F6F6;
+    border-radius: 25px;
     width: 100%;
 
-    .housing-container {
-        display: flex;
-        justify-content: center;
-        // align-items: center;
-        flex-wrap: wrap;
-        gap: $gap;
-        background-color: #F6F6F6;
-        border-radius: 25px;
+    .housing {
+        flex: 0 0 calc(33.33% - $gap);
+        aspect-ratio: 1 / 1;
+        background-color: #FF6060;
+        border-radius: 10px;
+        overflow: hidden;
+
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+    }
+    img {
+        position: relative;
+        z-index: 0;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .title {
+        position: absolute;
+        z-index: 1;
+        left: 15px;
+        bottom: 15px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: start;
+    }
 
+    @media screen and (max-width: 768px) {
+        
         .housing {
-            flex: 0 0 calc(33.33% - $gap);
-            aspect-ratio: 1 / 1;
-            background-color: #FF6060;
-            border-radius: 10px;
-            overflow: hidden;
-
-            position: relative;
-            overflow: hidden;
-            color: #fff;
-        }
-        img {
-            position: relative;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .title {
-            position: absolute;
-            z-index: 1;
-            left: 15px;
-            bottom: 15px;
-            font-size: 18px;
-            font-weight: 700;
-            text-align: start;
-        }
-
-        @media screen and (max-width: 768px) {
-            
-            .housing {
-                flex: 0 0 100%;
-            }
+            flex: 0 0 100%;
         }
     }
-    
 }
