@@ -11,8 +11,8 @@
     }
 
     @media screen and (max-width:768px) {
-        .housing-pictures {
-            height: 255px;
+        .infos {
+            width: 100%;
         }
         .arrow {
             width: 12px;
@@ -59,6 +59,7 @@
         left: 50%;
         transform: translateX(-50%);
         font-size: 18px;
+        z-index: 10;
     }
 }
 
@@ -75,25 +76,62 @@
 
     .infos-housing {
         width: 70%;
+
+        .title {
+            font-size: 36px;
+            margin: 0;
+            color: $main-color;
+        }
+        .location {
+            font-size: 26px;
+            color: #000;;
+        }
+        .title-location {
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        .tags {
+            display: flex;
+            gap: 10px;
+        }
+        .tag {
+            padding: 5px 30px;
+            background-color: $main-color;
+            border-radius: 10px;
+            font-family: 14px;
+            font-weight: 700;
+        }
+
+        @media screen and (max-width: 768px) {
+            .title {
+                font-size: 18px;
+            }
+            .location {
+                font-size: 14px;
+            }
+            .title-location {
+                height: fit-content;
+                margin-bottom: 10px;
+            }
+            .tag {
+                font-size: 10px;
+            }
+        }
     }
     .infos-host {
         width: 30%;
         display: flex;
         flex-direction: column;
 
-        & > * {
-            border: 1px solid blue;
+        .host {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 10px;
+            height: 80px;
+            margin-bottom: 15px;
         }
-    }
-    .host {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        flex-wrap: nowrap;
-        gap: 10px;
-        height: 80px;
-        margin-bottom: 15px;
-
         .host-name {
             width: min-content;
             text-align: end;
@@ -108,55 +146,54 @@
             overflow: hidden;
 
         }
-        img {
+        .host-img {
             @extend %img;
         }
-    }
-
-    .title {
-        font-size: 36px;
-        margin: 0;
-        color: $main-color;
-    }
-    .location {
-        font-size: 26px;
-        color: #000;;
-    }
-    .title-location {
-        height: 80px;
-        margin-bottom: 15px;
-    }
-    .tags {
-        display: flex;
-        gap: 10px;
-        font-family: 14px;
-        font-weight: 700;
-    }
-    .tag {
-        padding: 5px 30px;
-        background-color: $main-color;
-        border-radius: 10px;
-    }
-
-    .rating {
-        text-align: end;
-    }
-
-    .star {
-        width: 36px;
-        height: 36px;
-        path {
-            fill: #E3E3E3;
+        .rating {
+            text-align: end;
         }
-    }
-    .star.active {
-        path {
-            fill: #FF6060; 
+        .star {
+            width: 36px;
+            height: 36px;
+            path {
+                fill: #E3E3E3;
+            }
         }
-    }
+        .star.active {
+            path {
+                fill: #FF6060; 
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: row-reverse;
+            & > * {
+                width: 50%;
+            }
+            .host {
+                height: fit-content;
+            }
+            .host-name {
+                font-size: 12px;
+            }
+            .host-picture {
+                width: 32px;
+                height: 32px;
+            }
+            .rating {
+                text-align: start;
+            }
+            .star {
+                width: 18px;
+                height: 18px;
+            }
+
+        }
+    }    
 
     @media screen and (max-width:768px) {
         flex-direction: column;
+        gap: 10px;
 
         .infos {
             width: 100%;
