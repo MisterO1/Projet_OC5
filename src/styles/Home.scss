@@ -8,9 +8,16 @@
     gap: 30px;
     padding: 0;
     @extend %comp-marg;
+}
 
-    @media screen and (max-width: 768px) {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+.card-container {
+    $gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $gap;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    width: 100%;
 }

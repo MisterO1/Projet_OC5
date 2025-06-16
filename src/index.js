@@ -9,6 +9,7 @@ import Error from './components/Error';
 import Home from './components/Home';
 import About from './components/About';
 import HousingSheet from './components/HousingSheet'
+import Card from './components/Card';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
         <Route path='/' element={<Home />}/>
         <Route path='/housingSheet' element={<HousingSheet />} />
         <Route path='/about' element={<About />}/>
+        <Route path='/test' element={<Card />}/>
         <Route path='*' element={<Error />}/>
       </Routes>
       <Footer />
