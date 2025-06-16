@@ -1,13 +1,13 @@
 import DropDown from './DropDown'
-import Preview from './Preview'
+import Banner from './Banner'
 
 import '../styles/About.scss'
-import backgroundAbout from '../assets/background-about.jpg'
+import bannerAbout from '../assets/bannerAbout.jpg'
 
 export default function About() {
     return(
         <div className='comp comp-about'>
-            <Preview image={backgroundAbout} isText={false} />
+            <Banner image={bannerAbout} isText={false} />
             <section className='comp section-about'>
                 <DropDown 
                     title="Fiabilité"

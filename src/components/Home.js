@@ -1,6 +1,6 @@
-import Preview from './Preview'
+import Banner from './Banner'
 import Card from './Card'
-import backgroundHome from '../assets/background-home.jpg'
+import bannerHome from '../assets/bannerHome.jpg'
 
 import '../styles/Home.scss'
 import logements from '../data/logements.json'
@@ -8,7 +8,7 @@ import logements from '../data/logements.json'
 export default function Home() {
     return (
         <div className="comp comp-home">
-            <Preview image={ backgroundHome } isText={true} />
+            <Banner image={ bannerHome } isText={true} />
             <div className='comp comp-card'>
                 <div className='card-container'>
                     {logements.map((logement) => 

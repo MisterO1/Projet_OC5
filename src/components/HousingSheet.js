@@ -1,6 +1,6 @@
 import '../styles/HousingSheet.scss'
-import background from '../assets/background.jpg'
-import background2 from '../assets/background-about.jpg'
+import defaultLogement from '../assets/defaultLogement.jpg'
+import defaultLogement2 from '../assets/defaultLogement.jpg'
 
 import DropDown from './DropDown'
 import SlideShow from './SlideShow'
@@ -8,7 +8,7 @@ import SlideShow from './SlideShow'
 export default function HousingSheet(){
     return(
         <div className='comp comp-housingSheet'>
-            <SlideShow listPictures={[background,background2]}/>
+            <SlideShow listPictures={[defaultLogement,defaultLogement2]}/>
             <section className='presentation'>
                 <div className='infos infos-housing'>
                     <div className='title-location'>
