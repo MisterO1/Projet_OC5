@@ -10,6 +10,9 @@
         margin: 0;
         // border: 1px solid blue;
     }
+    button {
+        background: none;
+    }
 
     @media screen and (max-width:768px) {
         .infos {
