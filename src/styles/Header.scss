@@ -1,16 +1,13 @@
+@use './index.scss' as *;
+
 header {
-  margin: 0 50px;
-  margin-bottom: 50px;
-  // width : 100%;
-  // min-width: 100%;
+  @extend %comp-marg;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 24px;
 
   .logo{
-    // width: 210px;
-    // height: 68px; 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
