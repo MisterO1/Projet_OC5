@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 export default function Card({CardImage = house, CardTitle = 'Titre de la page', CardId = 'c67ab8a7'}){
     return(
-        <Link to={'/housingSheet'} >
+        <Link to={'/housingSheet'} className='card-wrapper'>
             <div className="card">
                 <img className='card-img' src={CardImage} alt={CardTitle} />
-                <h2 className='card-title'>{CardTitle}</h2>
+                <div className='card-title'>{CardTitle}</div>
             </div>
         </Link>
     )
