@@ -1,15 +1,29 @@
 import '../styles/HousingSheet.scss'
 
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
+
 import logements from '../data/logements.json'
 
 import DropDown from './DropDown'
 import SlideShow from './SlideShow'
+import { useEffect } from 'react'
 
 export default function HousingSheet(){
 
     const { logementId } = useParams()
-    const logement = logements.filter(logement => logement.id === logementId)[0]
+    const navigate = useNavigate()
+
+    const logement = logements.find(logement => logement.id === logementId)
+
+    useEffect(()=>{
+        if (!logement) {
+            navigate('/404', {replace: true})
+        }
+    },[logement, navigate])
+
+    if (!logement) {
+      return <p>Logement introuvable. Redirection...</p>;
+    }
     
     return(
         <div className='comp comp-housingSheet'>
