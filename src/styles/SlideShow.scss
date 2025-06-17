@@ -52,10 +52,14 @@
     }
 
     @media screen and (max-width:768px) {
-        .arrow {
-            width: 12px;
-            height: 20px;
+        height: 255px;
+        .picture-overlay {
+            .arrow {
+                width: 12px;
+                height: 20px;
+            }
         }
+            
     }
         
 }
