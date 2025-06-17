@@ -15,7 +15,7 @@ export default function Home() {
                         <Card 
                             key={logement.id}
                             CardId={logement.id}
-                            CardImage={logement.pictures[0]} 
+                            CardImage={logement.cover} 
                             CardTitle={logement.title}
                         />
                     )}
