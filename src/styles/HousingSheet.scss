@@ -41,12 +41,12 @@
             color: #000;;
         }
         .title-location {
-            height: 80px;
             margin-bottom: 15px;
         }
         .tags {
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
         }
         .tag {
             padding: 5px 30px;
@@ -54,6 +54,7 @@
             border-radius: 10px;
             font-family: 14px;
             font-weight: 700;
+            text-wrap: nowrap;
         }
 
         @media screen and (max-width: 768px) {
@@ -62,10 +63,6 @@
             }
             .location {
                 font-size: 14px;
-            }
-            .title-location {
-                height: fit-content;
-                margin-bottom: 10px;
             }
             .tag {
                 font-size: 10px;
