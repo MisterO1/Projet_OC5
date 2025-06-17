@@ -1,10 +1,12 @@
 import logo from "../assets/logo.png"
 import logoSmall from "../assets/logo_small.png"
-import { Link } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
+
 import "../styles/Header.scss"
 
-
 export default function Header (){
+    const location = useLocation()
+    console.log(location)
     return (
         <header className="comp">
             <Link to="/">
@@ -14,8 +16,8 @@ export default function Header (){
                 </picture>
             </Link>
             <nav>
-                <Link to="/" className="active" >Acceuil</Link>
-                <Link to="/about" >A propos</Link>
+                <NavLink to="/" className={({isActive})=> isActive ? 'active' : ''} >Acceuil</NavLink>
+                <NavLink to="/about" className={({isActive})=> isActive ? 'active' : ''} >A propos</NavLink>
             </nav>
         </header>
     )

@@ -8,9 +8,7 @@ header {
   font-size: 24px;
 
   .logo{
-    defaultLogement-size: contain;
-    defaultLogement-repeat: no-repeat;
-    defaultLogement-position: center;
+    @extend %img;
   }
 
   nav {
