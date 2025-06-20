@@ -1,12 +1,11 @@
 import logo from "../../assets/logo.png"
 import logoSmall from "../../assets/logo_small.png"
-import { Link, NavLink, useLocation } from "react-router-dom"
+import { Link, NavLink} from "react-router-dom"
 
 import "./Header.scss"
 
 export default function Header (){
-    const location = useLocation()
-    console.log(location)
+    
     return (
         <header className="comp">
             <Link to="/">
