@@ -1,8 +1,8 @@
-import DropDown from './DropDown'
-import Banner from './Banner'
+import DropDown from '../../components/DropDown'
+import Banner from '../../components/Banner'
 
-import '../styles/About.scss'
-import bannerAbout from '../assets/bannerAbout.jpg'
+import './About.scss'
+import bannerAbout from '../../assets/bannerAbout.jpg'
 
 export default function About() {
     return(

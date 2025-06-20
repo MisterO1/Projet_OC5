@@ -1,5 +1,5 @@
-import logoDark from "../assets/logo_dark-small.png"
-import "../styles/Footer.scss"
+import logoDark from "../../assets/logo_dark-small.png"
+import "./Footer.scss"
 
 
 export default function Footer (){

@@ -1,9 +1,9 @@
-import Banner from './Banner'
-import Card from './Card'
-import bannerHome from '../assets/bannerHome.jpg'
+import Banner from '../../components/Banner'
+import Card from '../../components/Card'
+import bannerHome from '../../assets/bannerHome.jpg'
 
-import '../styles/Home.scss'
-import logements from '../data/logements.json'
+import './Home.scss'
+import logements from '../../data/logements.json'
 
 export default function Home() {
     return (

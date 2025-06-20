@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import './styles/index.scss'
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Error from './components/Error';
-import Home from './components/Home';
-import About from './components/About';
-import HousingSheet from './components/HousingSheet'
+import Error from './pages/Error';
+import Home from './pages/Home';
+import About from './pages/About';
+import HousingSheet from './pages/HousingSheet'
 import Card from './components/Card';
 
 

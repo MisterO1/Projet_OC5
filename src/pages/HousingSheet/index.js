@@ -1,11 +1,11 @@
-import '../styles/HousingSheet.scss'
+import './HousingSheet.scss'
 
 import { useParams, useNavigate } from 'react-router-dom'
 
-import logements from '../data/logements.json'
+import logements from '../../data/logements.json'
 
-import DropDown from './DropDown'
-import SlideShow from './SlideShow'
+import DropDown from '../../components/DropDown'
+import SlideShow from '../../components/Slideshow'
 import { useEffect } from 'react'
 
 export default function HousingSheet(){

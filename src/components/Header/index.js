@@ -1,8 +1,8 @@
-import logo from "../assets/logo.png"
-import logoSmall from "../assets/logo_small.png"
+import logo from "../../assets/logo.png"
+import logoSmall from "../../assets/logo_small.png"
 import { Link, NavLink, useLocation } from "react-router-dom"
 
-import "../styles/Header.scss"
+import "./Header.scss"
 
 export default function Header (){
     const location = useLocation()
@@ -16,7 +16,7 @@ export default function Header (){
                 </picture>
             </Link>
             <nav>
-                <NavLink to="/" className={({isActive})=> isActive ? 'active' : ''} >Acceuil</NavLink>
+                <NavLink to="/" className={({isActive})=> isActive ? 'active' : ''} >Accueil</NavLink>
                 <NavLink to="/about" className={({isActive})=> isActive ? 'active' : ''} >A propos</NavLink>
             </nav>
         </header>
