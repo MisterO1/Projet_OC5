@@ -7,6 +7,7 @@ export default function Card({CardId, CardImage, CardTitle = 'Titre de la page'}
         <Link to={'/housingSheet/'+ CardId} className='card-wrapper'>
             <div className="card">
                 <img className='card-img' src={CardImage} alt={CardTitle} />
+                <div className='card-overlay'></div>
                 <div className='card-title'>{CardTitle}</div>
             </div>
         </Link>
